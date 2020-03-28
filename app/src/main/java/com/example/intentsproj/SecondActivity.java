@@ -16,19 +16,19 @@ public class SecondActivity extends AppCompatActivity {
     EditText n2;
     TextView ans;
 
-    int x,y;
+    int z,y;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState);
     }
 
 
-    public void addition(View view) { ans.setText(String.valueOf(x+y));}
+    public void addition(View view) { ans.setText(String.valueOf(z+y));}
 
-    public void sub(View view) { ans.setText(String.valueOf(x-y)); }
+    public void sub(View view) { ans.setText(String.valueOf(z-y)); }
 
-    public void mul(View view) { ans.setText(String.valueOf(x*y)); }
+    public void mul(View view) { ans.setText(String.valueOf(z*y)); }
 
-    public void div(View view) { ans.setText(String.valueOf(x/y)); }
+    public void div(View view) { ans.setText(String.valueOf(z/y)); }
 
 }
