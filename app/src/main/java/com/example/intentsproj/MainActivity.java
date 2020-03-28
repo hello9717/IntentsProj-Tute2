@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,10 +35,15 @@ public class MainActivity extends AppCompatActivity {
            EditText editText1 = findViewById(R.id.editText1);
            String message1 = editText1.getText().toString();
 
-           EditText editText2 = findViewById(R.id.editText2);
-           String message2 = editText1.getText().toString();
-
            Intent intent1 = new Intent(this, SecondActivity.class);
+           intent1.putExtra("Extra message1",message1 );
            startActivity(intent1);
+
+           EditText editText2 = findViewById(R.id.displayNo2);
+           String message2 = editText2.getText().toString();
+
+           Intent intent2 = new Intent(this, SecondActivity.class);
+           intent1.putExtra("Extra message2",message2 );
+           startActivity(intent2);
        }
 }
